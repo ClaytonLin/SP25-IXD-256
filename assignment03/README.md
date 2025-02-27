@@ -63,5 +63,7 @@ For the tassels at the bottom, I used white paper. I cut it into thin strips abo
 
 
 ### Project Outcomes
+The final result is very good. When the lantern is green and yellow, it makes you want it to turn red.
 
+In the future, if I have time, I hope to decorate the copper tape with small bells and add more interesting animations to the color changes.
 
