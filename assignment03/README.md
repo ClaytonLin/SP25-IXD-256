@@ -1,4 +1,4 @@
-![Hardware_2](https://github.com/user-attachments/assets/1a9fa76e-9b27-46b5-9b53-e81eda10070b)### Introduction
+### Introduction
 
 My idea is to create a Chinese lantern because it was recently Chinese New Year. People usually use lanterns during the New Year, so after the festival ends, they have to wait a whole year to use them again. I want to bring this meaning into my project, so when people use it, they can feel the slow passing of time and the difficulties of life.
 
@@ -76,5 +76,7 @@ The final result is very good. When the lantern is green and yellow, it makes yo
 In the future, if I have time, I hope to decorate the copper tape with small bells and add more interesting animations to the color changes.
 
 ![Outcome_1](https://github.com/user-attachments/assets/449f0059-b9b1-4725-9bc3-ac5bf61e90ae)
+![Outcome 2](https://github.com/user-attachments/assets/5f333076-9f8b-4169-8631-f70c06008b51)
+
 
 https://drive.google.com/file/d/19bkw-SsjQaKgUjiETXWyZsPTaRwSIf5I/view?usp=drive_link
