@@ -1,4 +1,4 @@
-### Introduction
+![Hardware_2](https://github.com/user-attachments/assets/1a9fa76e-9b27-46b5-9b53-e81eda10070b)### Introduction
 
 My idea is to create a Chinese lantern because it was recently Chinese New Year. People usually use lanterns during the New Year, so after the festival ends, they have to wait a whole year to use them again. I want to bring this meaning into my project, so when people use it, they can feel the slow passing of time and the difficulties of life.
 
@@ -15,9 +15,11 @@ My lantern has three states. At the beginning, it checks if the copper tape is t
 * Copper Tape: used as a button sensor or for electrical connections.
 * Laptop: used for coding, uploading firmware, ,monitoring output and providing power.
   
-![Diagram](https://github.com/user-attachments/assets/d2b9c454-55bd-482f-8271-8ee3e08ef9bf)
 
-![WechatIMG2221](https://github.com/user-attachments/assets/733e5ae4-2cdf-4143-9ad7-97723da31097)
+![Diagram](https://github.com/user-attachments/assets/1838d6e0-8f60-4695-a479-3a1e2c08c368)
+
+![Hardware_2](https://github.com/user-attachments/assets/aed63ed6-a413-4264-85da-44d5d8d6654f)
+
 
 ### Firmware
 Green Pulse Effect:
@@ -73,6 +75,6 @@ The final result is very good. When the lantern is green and yellow, it makes yo
 
 In the future, if I have time, I hope to decorate the copper tape with small bells and add more interesting animations to the color changes.
 
-![WechatIMG2222](https://github.com/user-attachments/assets/edc01094-429d-493d-a49a-2a902604f97c)
+![Outcome_1](https://github.com/user-attachments/assets/449f0059-b9b1-4725-9bc3-ac5bf61e90ae)
 
-
+https://drive.google.com/file/d/19bkw-SsjQaKgUjiETXWyZsPTaRwSIf5I/view?usp=drive_link
