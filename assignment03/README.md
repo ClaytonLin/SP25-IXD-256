@@ -5,6 +5,7 @@ My idea is to create a Chinese lantern because it was recently Chinese New Year.
 ### State Diagram
 
 My lantern has three states. At the beginning, it checks if the copper tape is touching. If not, all LEDs will pulsate in RGB green. Once it touches, all lights will turn off, and the LEDs will light up one by one in RGB yellow. If the copper tape stops touching during this process, all LEDs will go back to pulsating in RGB green. When all LEDs are lit in yellow, they will turn red. At this point, even if the copper tape is released, the red light will stay.
+
 <img width="1920" alt="State Diagram" src="https://github.com/user-attachments/assets/d37b1776-1ba0-4dfb-9622-5ce1388e998a" />
 
 
@@ -13,6 +14,10 @@ My lantern has three states. At the beginning, it checks if the copper tape is t
 * NeoPixel: allows individual control of each LED using a single data wire
 * Copper Tape: used as a button sensor or for electrical connections.
 * Laptop: used for coding, uploading firmware, ,monitoring output and providing power.
+  
+![Diagram](https://github.com/user-attachments/assets/d2b9c454-55bd-482f-8271-8ee3e08ef9bf)
+
+![WechatIMG2221](https://github.com/user-attachments/assets/733e5ae4-2cdf-4143-9ad7-97723da31097)
 
 ### Firmware
 Green Pulse Effect:
@@ -21,7 +26,8 @@ def pulse_green():
     for brightness in range(0, 256, 5): 
         for i in range(NUM_PIXELS):
             np[i] = (0, brightness, 0)
-        np.write()
+        np.write()![Uploading WechatIMG2221.jpeg…]()
+
         sleep_ms(10)
     for brightness in range(255, -1, -5): 
         for i in range(NUM_PIXELS):
@@ -66,4 +72,7 @@ For the tassels at the bottom, I used white paper. I cut it into thin strips abo
 The final result is very good. When the lantern is green and yellow, it makes you want it to turn red.
 
 In the future, if I have time, I hope to decorate the copper tape with small bells and add more interesting animations to the color changes.
+
+![WechatIMG2222](https://github.com/user-attachments/assets/edc01094-429d-493d-a49a-2a902604f97c)
+
 
