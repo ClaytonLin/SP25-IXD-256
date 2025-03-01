@@ -42,12 +42,12 @@ LED Turning Yellow in WAITING State:
 ``` Python 
 if state == "WAITING":
     if ticks_ms() - last_yellow_time >= yellow_speed:
-        if yellow_count < NUM_PIXELS:
+        if yellow_count < NUM_PIXELS: # Gradually turn LEDs yellow
             np[yellow_count] = (255, 255, 0)  
             np.write()
             yellow_count += 1
             last_yellow_time = ticks_ms()
-        else:
+        else: # All LEDs are yellow
             state = "FINISH"
             print("All LEDs turned yellow, switching to FINISH state.")
 ```
