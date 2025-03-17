@@ -93,19 +93,11 @@ def white_fade():
 ```
 
 ### Physical Components
-I used white paper to build the shape. Since my LED has three different colors, I wanted the lantern itself to not affect the LED colors in different states.
-
-I rolled a piece of paper into a cylinder to hold the LED strip and other parts. In the middle, I added a cardboard piece to support the cylinder and components. This way, the LEDs won’t appear as sharp circular spots on the paper but will create a more blurred and soft light effect.
-
-For the outer shape, I used paper to make the curved form of the lantern. I cut a piece of paper into strips with about 0.5 inches spacing (leaving the top and bottom uncut). Then, I attached it to the cylinder and adjusted it by hand to make it more three-dimensional.
-
-For the tassels at the bottom, I used white paper. I cut it into thin strips about 0.1 inches apart (keeping the top part uncut), rolled it up, and attached it to a wire.
+I used a black glove as the base and cut several hollow circles out of cardboard, stacking them together to form the core part of the emitting rays. The sides of these cardboard pieces feature hollow patterns, allowing light to shine through. An LED strip, IMU Pro, and M5 Stack are attached inside this cardboard-made energy core, with the entire setup affixed to the glove.
 
 
 ### Project Outcomes
-The final result is very good. When the lantern is green and yellow, it makes you want it to turn red.
-
-In the future, if I have time, I hope to decorate the copper tape with small bells and add more interesting animations to the color changes.
+This project captures hand movements with high precision, and the on-screen feedback is very responsive. However, in the future, if I have more time, I will refine the physical components, using better materials to enhance the appearance of the energy core. Additionally, I plan to add a targeting icon on the screen to make the aiming process feel more like a targeting game.
 
 ![Outcome_1](https://github.com/user-attachments/assets/449f0059-b9b1-4725-9bc3-ac5bf61e90ae)
 ![Outcome 2](https://github.com/user-attachments/assets/5f333076-9f8b-4169-8631-f70c06008b51)
