@@ -4,7 +4,17 @@ My idea is to make a glove for shooting games. When you wear this glove and make
 
 ### State Diagram
 
-My lantern has three states. At the beginning, it checks if the copper tape is touching. If not, all LEDs will pulsate in RGB green. Once it touches, all lights will turn off, and the LEDs will light up one by one in RGB yellow. If the copper tape stops touching during this process, all LEDs will go back to pulsating in RGB green. When all LEDs are lit in yellow, they will turn red. At this point, even if the copper tape is released, the red light will stay.
+My system has several states:
+
+At the beginning, it starts in the "START" state, where the RGB and input pins are initialized. Then, the IMU Pro unit monitors motion data.
+
+If the IMU Pro unit detects a high X-axis value, the system enters the "CHARGING" state. If the unit value then drops below a certain threshold, it transitions to "BLASTING", turning the LEDs red and playing a "BOOM" sound. This action eliminates an enemy.
+
+If the Y-axis value changes very fast, the system enters the "ULTIMATE" state, turning all LEDs white. If all enemies are eliminated, the player wins.
+
+If the Y-axis value exceeds a certain threshold, the system enters the "NEXT" state, where another enemy is eliminated. If all enemies are eliminated within 10 seconds, the player wins. Otherwise, the player loses.
+
+If the IMU Pro unit value remains low, the system stays in "WAITING", keeping the LEDs off.
 
 <img width="3236" alt="Diagram" src="https://github.com/user-attachments/assets/c016acff-7547-48bf-b95a-240a0a9f47f3" />
 
