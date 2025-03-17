@@ -12,10 +12,10 @@ My lantern has three states. At the beginning, it checks if the copper tape is t
 
 
 ### Hardware
-* M5 Stack: for processing and controlling
-* NeoPixel: allows individual control of each LED using a single data wire
-* Copper Tape: used as a button sensor or for electrical connections.
-* Laptop: used for coding, uploading firmware, ,monitoring output and providing power.
+* M5 Stack: Processing and controlling
+* NeoPixel: Show the light on the glove and provide light feedback.
+* Copper Tape: Detects hand movement, mainly including X-axis and Y-axis movement.
+* Laptop: Coding, uploading firmware, ,monitoring output and providing power.
   
 
 ![Diagram](https://github.com/user-attachments/assets/1838d6e0-8f60-4695-a479-3a1e2c08c368)
