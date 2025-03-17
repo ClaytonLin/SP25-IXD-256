@@ -24,41 +24,71 @@ My lantern has three states. At the beginning, it checks if the copper tape is t
 
 
 ### Firmware
-Green Pulse Effect:
+IMU Data Processing:
 ``` Python 
-def pulse_green():
-    for brightness in range(0, 256, 5): 
-        for i in range(NUM_PIXELS):
-            np[i] = (0, brightness, 0)
-        np.write()![Uploading WechatIMG2221.jpeg…]()
+if (ticks_ms() > imu_timer + 100):
+    imu_timer = ticks_ms()
+    imu_val = imu.get_accelerometer()
+    imu_x = imu_val[0]
+    imu_y = imu_val[1]
 
-        sleep_ms(10)
-    for brightness in range(255, -1, -5): 
-        for i in range(NUM_PIXELS):
-            np[i] = (0, brightness, 0)
+    message = "a"
+    r_final, g_final, b_final = 0, 0, 0
+    
+    if abs(imu_y) > 0.5:
+        r_final = 255
+        message = "b"
+    elif abs(imu_x) > 0.5:
+        r_final = 255
+        g_final = 255
+        message = "c"
+
+```
+
+LED Color Transition:
+``` Python 
+step = 10  
+if r < r_final:
+    r += step
+elif r > r_final:
+    r -= step
+if g < g_final:
+    g += step
+elif g > g_final:
+    g -= step
+if b < b_final:
+    b += step
+elif b > b_final:
+    b -= step
+     
+red = int(r * brightness / 100)
+green = int(g * brightness / 100)
+blue = int(b * brightness / 100)
+for i in range(30):
+    np[i] = (red, green, blue)
+np.write()
+
+```
+
+White Light Effect:
+``` Python 
+def white_fade():
+    print("White light for 3 seconds")
+    for i in range(30):
+        np[i] = (255, 255, 255)
+    np.write()
+    sleep(3)
+
+    print("e")
+
+    for brightness in range(255, -1, -10):
+        for i in range(30):
+            np[i] = (brightness, brightness, brightness)
         np.write()
-        sleep_ms(10)
-```
+        sleep_ms(50)
 
-LED Turning Yellow in WAITING State:
-``` Python 
-if state == "WAITING":
-    if ticks_ms() - last_yellow_time >= yellow_speed:
-        if yellow_count < NUM_PIXELS: # Gradually turn LEDs yellow
-            np[yellow_count] = (255, 255, 0)  
-            np.write()
-            yellow_count += 1
-            last_yellow_time = ticks_ms()
-        else: # All LEDs are yellow
-            state = "FINISH"
-            print("All LEDs turned yellow, switching to FINISH state.")
-```
+    reset_counters()
 
-Red LEDs in FINISH State:
-``` Python 
-elif state == "FINISH":
-    set_strip_color(255, 0, 0) 
-    print("All LEDs turned red. FINISH state reached.")
 
 ```
 
