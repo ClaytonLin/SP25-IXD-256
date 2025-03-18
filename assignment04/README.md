@@ -19,18 +19,14 @@ If the IMU Pro unit value remains low, the system stays in "WAITING", keeping th
 <img width="3236" alt="Diagram" src="https://github.com/user-attachments/assets/c016acff-7547-48bf-b95a-240a0a9f47f3" />
 
 
-
-
 ### Hardware
 * M5 Stack: Processing and controlling
 * NeoPixel: Show the light on the glove and provide light feedback.
 * Copper Tape: Detects hand movement, mainly including X-axis and Y-axis movement.
 * Laptop: Coding, uploading firmware, ,monitoring output and providing power.
   
-
-![Diagram](https://github.com/user-attachments/assets/1838d6e0-8f60-4695-a479-3a1e2c08c368)
-
-![Hardware_2](https://github.com/user-attachments/assets/aed63ed6-a413-4264-85da-44d5d8d6654f)
+![Sketches_1](https://github.com/user-attachments/assets/585e23f3-e3da-40ea-b9ad-3aee5c910e3d)
+![Hardware_1](https://github.com/user-attachments/assets/ef969139-da73-4bd1-86ad-59949c64785f)
 
 
 ### Firmware
