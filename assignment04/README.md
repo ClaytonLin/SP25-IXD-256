@@ -109,8 +109,5 @@ This project captures hand movements with high precision, and the on-screen feed
 ![WechatIMG2247](https://github.com/user-attachments/assets/1b57a5a9-dd78-406b-8558-244713654052)
 ![WechatIMG2246](https://github.com/user-attachments/assets/f9f953d7-363d-4219-97ba-3b5ac2b47482)
 
-
-
-
-https://drive.google.com/file/d/19bkw-SsjQaKgUjiETXWyZsPTaRwSIf5I/view?usp=drive_link
+https://drive.google.com/file/d/14ZiGIelTD3uX2TsfjKc6jJRlts9GFmA7/view?usp=sharing
 
