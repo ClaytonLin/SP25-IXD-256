@@ -104,9 +104,12 @@ I used a black glove as the base and cut several hollow circles out of cardboard
 
 ### Project Outcomes
 This project captures hand movements with high precision, and the on-screen feedback is very responsive. However, in the future, if I have more time, I will refine the physical components, using better materials to enhance the appearance of the energy core. Additionally, I plan to add a targeting icon on the screen to make the aiming process feel more like a targeting game.
+![WechatIMG2249](https://github.com/user-attachments/assets/1196e1d5-c437-4f84-8b19-7cf679a74972)
+![WechatIMG2248](https://github.com/user-attachments/assets/594a6905-67bc-400b-922c-89618063b60a)
+![WechatIMG2247](https://github.com/user-attachments/assets/1b57a5a9-dd78-406b-8558-244713654052)
+![WechatIMG2246](https://github.com/user-attachments/assets/f9f953d7-363d-4219-97ba-3b5ac2b47482)
 
-![Outcome_1](https://github.com/user-attachments/assets/449f0059-b9b1-4725-9bc3-ac5bf61e90ae)
-![Outcome 2](https://github.com/user-attachments/assets/5f333076-9f8b-4169-8631-f70c06008b51)
+
 
 
 https://drive.google.com/file/d/19bkw-SsjQaKgUjiETXWyZsPTaRwSIf5I/view?usp=drive_link
