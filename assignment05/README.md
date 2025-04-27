@@ -101,6 +101,12 @@ Receive message from protopie:
 In ProtoPie, I used over 130 lines of triggers and feedback.
 <img width="1503" alt="Screenshot 2025-04-26 at 11 16 12 PM" src="https://github.com/user-attachments/assets/0ab61626-2256-49a4-8ef8-17010a490a4f" />
 
+For Cloud Communication:
+
+![Screenshot 2025-04-26 at 11 25 26 PM](https://github.com/user-attachments/assets/b87dc5e6-7229-4184-81ca-e2bfc887462b)
+
+![Screenshot 2025-04-26 at 11 25 03 PM](https://github.com/user-attachments/assets/00b60a08-1858-4fd9-aaa8-7b1712d9b211)
+
 
 ### Physical Components
 I used LEGO to build the flower and its stem, and combined LEGO with other small parts to create the connection between the flower and the stem, ensuring that the flower could be controlled by a servo. I also placed a Reflective IR sensor inside.
