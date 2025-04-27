@@ -12,6 +12,7 @@ My idea is to create a physical companion device for an LLM system that can gath
 * NeoPixel: allows individual control of each LED using a single data wire.
 * Reflective IR Sensor: Used to detect the distance of the hand.
 * Gesture Sensor: Used to detect hand gestures, including up, down, forward, backward, left, and right.
+* Servo: Control the flowers to spin.
 * Laptop: used for coding, uploading firmware,monitoring output, providing power, listening to voice command and show the AI UI.
   
 <img width="567" alt="Screenshot 2025-04-26 at 9 25 56 PM" src="https://github.com/user-attachments/assets/4ce36000-96a6-42ec-8743-13c3e9f46094" />
@@ -97,6 +98,9 @@ Receive message from protopie:
                 special_effect_name = ""
 
 ```
+In ProtoPie, I used over 130 lines of triggers and feedback.
+<img width="1503" alt="Screenshot 2025-04-26 at 11 16 12 PM" src="https://github.com/user-attachments/assets/0ab61626-2256-49a4-8ef8-17010a490a4f" />
+
 
 ### Physical Components
 I used LEGO to build the flower and its stem, and combined LEGO with other small parts to create the connection between the flower and the stem, ensuring that the flower could be controlled by a servo. I also placed a Reflective IR sensor inside.
@@ -107,12 +111,14 @@ For the flowerpot, I designed it in SolidWorks and separated it into different l
 
 
 ### Project Outcomes
-The final result is very good. When the lantern is green and yellow, it makes you want it to turn red.
+I think the final result of the software part is very good. I managed to obtain input from the hardware and produce output on the software side, while simultaneously obtaining input from the software and producing output on the hardware side. This was the effect I initially aimed to achieve — truly realizing seamless communication between software and hardware. Overall, the interaction is also very rich, supporting most scenarios for listening to music. It’s a product that can be used straight away.
 
-In the future, if I have time, I hope to decorate the copper tape with small bells and add more interesting animations to the color changes.
+However, if I had more time, I would make my prototype more refined — not only by perfectly hiding all the sensors so they wouldn’t be visible from the outside, but also by adding more diverse physical outputs, such as incorporating a servo motor to control the movement of the leaves.
 
-![Outcome_1](https://github.com/user-attachments/assets/449f0059-b9b1-4725-9bc3-ac5bf61e90ae)
-![Outcome 2](https://github.com/user-attachments/assets/5f333076-9f8b-4169-8631-f70c06008b51)
+![Final_Outcome](https://github.com/user-attachments/assets/5183ac2d-ba55-401d-a6f5-4bcf401c5556)
+![Final_Outcome_2](https://github.com/user-attachments/assets/4bd9c68c-72d4-4ade-a537-37e0cd681a14)
 
 
-https://drive.google.com/file/d/19bkw-SsjQaKgUjiETXWyZsPTaRwSIf5I/view?usp=drive_link
+
+The video:
+https://drive.google.com/file/d/1713Js1TaLYeCcfYx0-NBSMUOci7Lz_u1/view?usp=sharing
