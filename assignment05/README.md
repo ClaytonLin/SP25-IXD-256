@@ -98,10 +98,17 @@ Receive message from protopie:
                 special_effect_name = ""
 
 ```
-In ProtoPie, I used over 130 lines of triggers and feedback.
+In ProtoPie, I used over 130 lines of triggers and feedback(Including AI animations, song playback and more):
+
 <img width="1503" alt="Screenshot 2025-04-26 at 11 16 12 PM" src="https://github.com/user-attachments/assets/0ab61626-2256-49a4-8ef8-17010a490a4f" />
 
+In ProtoPie Connect, I connected to OpenAI's API to generate responses. This AI has been fine-tuned to answer only music-related questions and, when executing commands (such as playing a song), it will not generate responses indicating that it cannot play music.
+
+<img width="310" alt="Screenshot 2025-04-26 at 11 29 55 PM" src="https://github.com/user-attachments/assets/1fbcdf56-2638-416f-a42c-ba6dce571b48" />
+
+
 For Cloud Communication:
+The program sends messages to Adafruit and uses IFTTT to create automated workflows. When I activate the AI for the first time each day, an email is sent saying "Clayton is home." Additionally, whenever a song is played, it is automatically added to a Google Sheets document.
 
 ![Screenshot 2025-04-26 at 11 25 26 PM](https://github.com/user-attachments/assets/b87dc5e6-7229-4184-81ca-e2bfc887462b)
 
