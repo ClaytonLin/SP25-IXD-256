@@ -4,9 +4,7 @@ My idea is to create a physical companion device for an LLM system that can gath
 
 ### State Diagram
 
-
-
-<img width="1920" alt="State Diagram" src="https://github.com/user-attachments/assets/d37b1776-1ba0-4dfb-9622-5ce1388e998a" />
+<img width="3339" alt="Diagram" src="https://github.com/user-attachments/assets/3b710335-ebf1-439d-a43a-9f405e7478fc" />
 
 
 ### Hardware
@@ -16,15 +14,13 @@ My idea is to create a physical companion device for an LLM system that can gath
 * Gesture Sensor: Used to detect hand gestures, including up, down, forward, backward, left, and right.
 * Laptop: used for coding, uploading firmware,monitoring output, providing power, listening to voice command and show the AI UI.
   
-
-![Diagram](https://github.com/user-attachments/assets/1838d6e0-8f60-4695-a479-3a1e2c08c368)
-
-![Hardware_2](https://github.com/user-attachments/assets/aed63ed6-a413-4264-85da-44d5d8d6654f)
+<img width="567" alt="Screenshot 2025-04-26 at 9 25 56 PM" src="https://github.com/user-attachments/assets/4ce36000-96a6-42ec-8743-13c3e9f46094" />
 
 
 ### Firmware
 Green Pulse Effect:
 ``` Python 
+
 def pulse_green():
     for brightness in range(0, 256, 5): 
         for i in range(NUM_PIXELS):
