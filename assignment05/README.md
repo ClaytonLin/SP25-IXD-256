@@ -18,42 +18,83 @@ My idea is to create a physical companion device for an LLM system that can gath
 
 
 ### Firmware
-Green Pulse Effect:
+Gesture Control:
 ``` Python 
 
-def pulse_green():
-    for brightness in range(0, 256, 5): 
-        for i in range(NUM_PIXELS):
-            np[i] = (0, brightness, 0)
-        np.write()![Uploading WechatIMG2221.jpeg…]()
+    if gesture_timer >= 200:
+        gesture_code = gesture_sensor.get_hand_gestures()
+        if gesture_code:
+            gesture_text = gesture_sensor.gesture_description(gesture_code).lower()
 
-        sleep_ms(10)
-    for brightness in range(255, -1, -5): 
-        for i in range(NUM_PIXELS):
-            np[i] = (0, brightness, 0)
-        np.write()
-        sleep_ms(10)
+            if gesture_text == "left":
+                if right_count > 0:
+                    right_count -= 1
+                    print(f"right{right_count}")
+                else:
+                    left_count += 1
+                    print(f"left{left_count}")
+
+            elif gesture_text == "right":
+                if left_count > 0:
+                    left_count -= 1
+                    print(f"left{left_count}")
+                else:
+                    right_count += 1
+                    print(f"right{right_count}")
+
+            elif gesture_text in ["up", "down", "forward", "backward", "clockwise", "anticlockwise", "wave"]:
+                left_count = 0
+                right_count = 0
+                print(gesture_text)
+
+        gesture_timer = 0
 ```
 
-LED Turning Yellow in WAITING State:
+Distance map to servo speed & LED stripe light:
 ``` Python 
-if state == "WAITING":
-    if ticks_ms() - last_yellow_time >= yellow_speed:
-        if yellow_count < NUM_PIXELS: # Gradually turn LEDs yellow
-            np[yellow_count] = (255, 255, 0)  
-            np.write()
-            yellow_count += 1
-            last_yellow_time = ticks_ms()
-        else: # All LEDs are yellow
-            state = "FINISH"
-            print("All LEDs turned yellow, switching to FINISH state.")
+        if ir_val < 2400:
+            current_state = "green"
+            if not welcome_sent:
+                print("welcome")
+                mqtt_client.publish(aio_user_name + '/feeds/welcomefeed', 'welcome', qos=0)
+                welcome_sent = True
+                last_state = "green"
+                continue
+
+            green_enabled = True
+            color = interpolate_color(ir_val)
+            set_leds(color)
+            speed_percent = int((2400 - ir_val) / 2400 * 100)
+            set_servo_speed(speed_percent)
+        else:
+            current_state = "default"
+            set_leds((255, 255, 255))
+            servo.duty(77)
 ```
 
-Red LEDs in FINISH State:
+Receive message from protopie:
 ``` Python 
-elif state == "FINISH":
-    set_strip_color(255, 0, 0) 
-    print("All LEDs turned red. FINISH state reached.")
+        ch = sys.stdin.readline().strip()
+        if ch != '':
+            if ch == "scifi":
+                scifi_effect()
+                special_effect_mode = True
+                special_effect_name = "scifi"
+            elif ch == "rnb":
+                rnb_effect()
+                special_effect_mode = True
+                special_effect_name = "rnb"
+            elif ch == "rap":
+                rap_effect()
+                special_effect_mode = True
+                special_effect_name = "rap"
+            elif ch == "piano":
+                piano_effect()
+                special_effect_mode = True
+                special_effect_name = "piano"
+            else:
+                special_effect_mode = False
+                special_effect_name = ""
 
 ```
 
