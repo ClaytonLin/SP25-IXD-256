@@ -15,6 +15,8 @@ My idea is to create a physical companion device for an LLM system that can gath
 * Servo: Control the flowers to spin.
 * Laptop: used for coding, uploading firmware,monitoring output, providing power, listening to voice command and show the AI UI.
   
+<img width="1200" alt="Hardware" src="https://github.com/user-attachments/assets/f8341f51-22c8-48c0-b5e1-df675790f943" />
+
 <img width="567" alt="Screenshot 2025-04-26 at 9 25 56 PM" src="https://github.com/user-attachments/assets/4ce36000-96a6-42ec-8743-13c3e9f46094" />
 
 
